@@ -199,6 +199,10 @@ header {
     text-decoration: none;
 }
 
+.works {
+    transition: ease-in 0.4s ;
+}
+
 .works h1 {
     font-family: "Open Sans", sans-serif;
     text-align: center;

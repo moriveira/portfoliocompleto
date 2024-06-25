@@ -20,6 +20,16 @@ window.addEventListener('scroll', function() {
         userElement.style.top = '0%'; // Posição original quando a posição de rolagem for menor ou igual a 480
         userElement.style.right = '0%'; // Posição original quando a posição de rolagem for menor ou igual a 480
     }
+
+    const worksElement = document.querySelector('.works');
+    if (scrollPosition > 1050) {
+        worksElement.style.opacity = '100%';
+    }
+
+    else {
+        worksElement.style.opacity = '0%'
+    }
+
 });
 
 document.addEventListener('click', function() {
@@ -30,4 +40,6 @@ document.addEventListener('click', function() {
         quadrado.style.display = 'block'; // Torna o quadrado visível ao clicar no parágrafo
     });
 });
+
+
 
