@@ -91,7 +91,21 @@ header {
 
 .meio1 h1 {
     transition: all 1.4s;
-    
+    overflow: hidden; 
+    border-right: .10em solid rgb(36, 36, 36); 
+    margin-right: 340px;
+    white-space: nowrap;
+    animation: typing 3s steps(25, end), blink-caret .75s infinite;
+}
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 60%; }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent; } 
+    50% { border-color: black; }
 }
 
 .meio1 h1:hover {
@@ -102,7 +116,7 @@ header {
 .meio2 {
     font-family: "Open Sans", sans-serif;
     opacity: 60%;
-    margin-top: -50px;
+    margin-top: -40px;
 }
 
 .meio2 h1 {
@@ -197,10 +211,6 @@ header {
 #info {
     position: absolute;
     text-decoration: none;
-}
-
-.works {
-    transition: ease-in 0.4s ;
 }
 
 .works h1 {
