@@ -1,45 +1,46 @@
 window.addEventListener('scroll', function() {
     const scrollPosition = window.scrollY;
     const aboutElement = document.querySelector('#sobremim');
+    const experienciaElement = document.querySelector('#experiencia');
+    const textexpElement = document.querySelector('.textexp');
+    const workElement = document.querySelector('.works');
+    const userElement = document.querySelector('.user');
+    const userImgElement = document.querySelector('.user img');
+    const userParagrafoElement = document.querySelector('.user p');
 
-    if (scrollPosition > 480) {
+    if (scrollPosition > 150) {
         aboutElement.style.width = '850px';
         aboutElement.style.height = '370px';
         aboutElement.style.opacity = '100%';
+
+        userElement.style.top = '80%';
+        userElement.style.right = '-130px';
+        userImgElement.style.width = '200px';
+        userImgElement.style.height = '200px';
+        userParagrafoElement.style.margin = '10% 5% 15% 5%';
     } else {
         aboutElement.style.width = '300px';
         aboutElement.style.opacity = '0%';
+
+        userElement.style.top = '0%';
+        userElement.style.right = '0%';
+        userImgElement.style.width = '280px';
+        userImgElement.style.height = '280px';
+        userParagrafoElement.style.margin = '0 10% 0 10%';
     }
 
-    // Ajustar o posicionamento do .user com base na posição de rolagem
-    const userElement = document.querySelector('.user');
-    if (scrollPosition > 480) {
-        userElement.style.top = '76%';
-        userElement.style.right = '30%';
+    if (scrollPosition > 250) {
+        experienciaElement.style.opacity = '100%';
+        textexpElement.style.opacity = '100%';
     } else {
-        userElement.style.top = '0%'; // Posição original quando a posição de rolagem for menor ou igual a 480
-        userElement.style.right = '0%'; // Posição original quando a posição de rolagem for menor ou igual a 480
+        experienciaElement.style.opacity = '0%';
+        textexpElement.style.opacity = '0%';
     }
 
-    const worksElement = document.querySelector('.works');
-    if (scrollPosition > 1050) {
-        worksElement.style.opacity = '100%';
+    if (scrollPosition > 900) {
+        workElement.style.opacity = '100%';
+    } else {
+        workElement.style.opacity = '0%';
     }
-
-    else {
-        worksElement.style.opacity = '0%'
-    }
-
 });
-
-document.addEventListener('click', function() {
-    const paragrafo = document.querySelector('.click');
-    const quadrado = document.querySelector('.certificados');
-
-    paragrafo.addEventListener('click', function() {
-        quadrado.style.display = 'block'; // Torna o quadrado visível ao clicar no parágrafo
-    });
-});
-
-
 

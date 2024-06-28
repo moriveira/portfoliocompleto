@@ -1,6 +1,10 @@
 * {
-    color: rgb(116, 109, 109);
+    color: rgb(71, 71, 71);
     text-shadow: -1px 2px 4px rgba(0,0,0,0.27);
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 .menu {
@@ -23,7 +27,7 @@
 }
 
 header {
-    background-color: rgba(144, 144, 144, 0.35);
+    background-color: rgba(70, 70, 70, 0.35);
     backdrop-filter: blur(5px);
     height: 100px;
     width: 80%;
@@ -48,7 +52,7 @@ header {
 }
 
 .about p:hover {
-    border-bottom: 2px solid gray;
+    border-bottom: 2px solid rgb(39, 39, 39);
     transition: all 400ms;
 }
 
@@ -64,8 +68,8 @@ header {
 }
 
 #info {
-    margin-top: 20%;
-    margin-left: 200px;
+    margin-top: 18%;
+    margin-left: 250px;
     user-select: none;
 }
 
@@ -92,15 +96,35 @@ header {
 .meio1 h1 {
     transition: all 1.4s;
     overflow: hidden; 
-    border-right: .10em solid rgb(36, 36, 36); 
-    margin-right: 340px;
+    border-right: .10em solid rgb(39, 39, 39); 
+    margin-right: 610px;
     white-space: nowrap;
-    animation: typing 3s steps(25, end), blink-caret .75s infinite;
+    animation: typing1 3s steps(25), blink-caret .75s infinite;
 }
 
-@keyframes typing {
+@keyframes typing1 {
     from { width: 0; }
-    to { width: 60%; }
+    to { width:45%; }
+}
+
+@keyframes typing2 {
+    from { width: 0; }
+    to { width:57%; }
+}
+
+@keyframes typing3 {
+    from { width: 0; }
+    to { width:62%; }
+}
+
+@keyframes typing4 {
+    from { width: 0; }
+    to { width:62%; }
+}
+
+@keyframes typing5 {
+    from { width: 0; }
+    to { width:62%; }
 }
 
 @keyframes blink-caret {
@@ -117,11 +141,17 @@ header {
     font-family: "Open Sans", sans-serif;
     opacity: 60%;
     margin-top: -40px;
+    margin-right: 340px;
 }
 
 .meio2 h1 {
     transition: all 1.2s;
     cursor: default;
+    overflow: hidden; 
+    border-right: .20em solid rgb(36, 36, 36); 
+    margin-right: 340px;
+    white-space: nowrap;
+    animation: typing2 4s steps(25), blink-caret .75s infinite;
 }
 
 .meio2 h1:hover {
@@ -136,6 +166,14 @@ header {
     opacity: 60%;
 }
 
+.fim p {
+    overflow: hidden; 
+    border-right: .35em solid rgb(36, 36, 36); 
+    margin-right: 390px;
+    white-space: nowrap;
+    animation: typing3 3s steps(45), blink-caret .75s infinite;
+}
+
 .fim a {
     color: rgb(16, 16, 16);
 }
@@ -143,8 +181,8 @@ header {
 .redes {
     display: flex;
     flex-direction: column;
-    margin-top: 25%;
-    margin-left: 58px;
+    margin-top: 22%;
+    margin-left: 100px;
     position: absolute;
 }
 
@@ -153,8 +191,8 @@ header {
 }
 
 .user {
-    margin-right: 300px;
-    margin-top: 20%;
+    margin-right: 285px;
+    margin-top: 17%;
     border-radius: 50%;
     background-color: transparent;
     border-radius: 120px;
@@ -174,8 +212,7 @@ header {
     transition: all 200ms;
     display: flex;
     justify-content: center;
-    margin-right: 12%;
-    margin-left: 12%;
+    margin: 5% 15% 10% 15%;
     user-select: none;
 }
 
@@ -213,25 +250,25 @@ header {
     text-decoration: none;
 }
 
+.works {
+    transition: all 0.8s;
+}
+
 .works h1 {
     font-family: "Open Sans", sans-serif;
     text-align: center;
     color: rgb(126, 126, 126);
-    margin-top: 90%;
+    margin-top: 95%;
     right: 0;
     left: 0;
     position: absolute;
     user-select: none;
 }
 
-section {
-    position: absolute;
-}
-
 .work-container {
     position: relative;
     display: inline-flex;
-    margin-top: 95%;
+    margin-top: 100%;
 }
 
 .work1 img, .work2 img, .work3 img {
@@ -302,37 +339,117 @@ section {
 }
 
 #sobremim {
-    margin-top: 60%;
+    margin-top: 45%;
+    margin-left: 65%;
     width: 850px;
-    height: 360px;
+    height: 500px;
     box-shadow: -15px 18px 46px -8px rgba(0,0,0,0.75);
     backdrop-filter: blur(5px);
     border-radius: 15px;
-    transition: 0.5s ease;
+    transition: 2s ease;
 }
 
 .sobre p {
     background-color: transparent;
-    margin: 5px 0px 0px 15px;
-    color: white;
+    margin: 25px 0px 0px 15px;
+    color: rgb(0, 0, 0);
     font-family: "Open Sans", sans-serif;
     margin-right: 50%;
+    font-size: 20px;
 }
 
 #sobremim h1 {
-    margin: 35px 0px 0px 15px;
-    color: white;
+    margin: 35px 0px 0px 45px;
+    color: rgb(76, 76, 76);
     font-family: "Open Sans", sans-serif;
 }
 
 .certificados {
-    width: 300px;
+    width: 450px;
     height: 700px;
     background-color: rgb(91, 91, 91);
-    display: none; /* Inicialmente oculto */
+    opacity: 0%;
     position: absolute;
-    top: 85%;
-    left: 150%;
+    top: 80%;
+    left: 15%;
+    border-radius: 20px;
+    box-shadow: -15px 18px 46px -8px rgba(0,0,0,0.75);
     transform: translate(-50%, -50%);
     transition: 0.5s ease;
+}
+
+.html img, .css img, .js img {
+    width: 120px;
+    height: 120px;
+    box-shadow: -15px 18px 46px -8px rgba(0,0,0,0.75);
+    border-radius: 10px;
+}
+
+.htmltext, .csstext, .jstext {
+    color: white;
+    font-family: "Open Sans", sans-serif;
+    position: absolute;
+}
+
+.htmltext p, .csstext p, .jstext p {
+    color: white;
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    transition: opacity 0.25s ease-in-out;
+    opacity: 1; 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+}
+
+.htmltext {
+    margin-left: -5%; 
+}
+
+.csstext {
+    margin-left: 34%; 
+}
+
+.jstext {
+    margin-left: 84%; 
+    
+}
+
+.jstext p, .csstext p, .html p {
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+    text-shadow: white;
+}
+
+.html, .css, .js {
+    display: inline;
+}
+
+.css{
+    margin: 0 65px 0 65px;
+}
+
+#experiencia {
+    position: absolute;
+    margin-top: 65%;
+    margin-left: 160px;
+    transition: all 4.5s;
+}
+
+.textexp {
+    position: absolute;
+    margin-left: 17%;
+    margin-top: 60%;
+    font-family: "Open Sans", sans-serif;
+    transition: all 4s;
+}
+
+.textexp h1 {
+    color: white;
+}
+
+#referenciaexp {
+    opacity: 0;
+    position: absolute;
+    margin-top: -90%;
 }
