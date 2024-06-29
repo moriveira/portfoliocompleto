@@ -383,6 +383,7 @@ header {
     height: 120px;
     box-shadow: -15px 18px 46px -8px rgba(0,0,0,0.75);
     border-radius: 10px;
+    margin-top: 50px;
 }
 
 .htmltext, .csstext, .jstext {
@@ -416,9 +417,10 @@ header {
 }
 
 .jstext p, .csstext p, .html p {
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     font-weight: 500;
-    text-shadow: white;
+    text-shadow: rgb(0, 0, 0);
+    margin-top: -160px;
 }
 
 .html, .css, .js {
@@ -433,7 +435,7 @@ header {
     position: absolute;
     margin-top: 65%;
     margin-left: 160px;
-    transition: all 4.5s;
+    transition: all 1.5s;
 }
 
 .textexp {
@@ -441,7 +443,7 @@ header {
     margin-left: 17%;
     margin-top: 60%;
     font-family: "Open Sans", sans-serif;
-    transition: all 4s;
+    transition: all 1s;
 }
 
 .textexp h1 {

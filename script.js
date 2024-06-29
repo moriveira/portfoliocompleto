@@ -29,7 +29,7 @@ window.addEventListener('scroll', function() {
         userParagrafoElement.style.margin = '0 10% 0 10%';
     }
 
-    if (scrollPosition > 250) {
+    if (scrollPosition > 380) {
         experienciaElement.style.opacity = '100%';
         textexpElement.style.opacity = '100%';
     } else {
